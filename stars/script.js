@@ -51,7 +51,7 @@ function debugTexts() {
     noStroke()
     rect(0, 0, width, (20 + 5) * 4) // fontSize20のtextが間隔5で4つ
     fill(0)
-    text("Dキーでデバック画面の表示を切り替えられます。",)
+    text("Dキーでデバック画面の表示を切り替えられます。",0,20)
     text(frameRate(), 0, 40)
     text(stars.length, 0, 60)
     // text(centerP.show(), 0, 60)
@@ -91,7 +91,7 @@ function setup() {
   p.appendChild(canvas.canvas);
   frameRate(60);
 
-  for(let i = 0;i < 500;i++){
+  for(let i = 0;i < 100;i++){
     stars.push(getNewStar(1))
   }
 }
